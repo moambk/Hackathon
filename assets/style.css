@@ -12,25 +12,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 ::selection {
   background-color: var(--titre1-color);
   color: var(--bg-color);
 }
+
 body {
   font-family: "Exo 2", serif;
   background-color: var(--bg-color);
   color: var(--txt-color);
   transition: all 0.3s ease;
+  scroll-behavior: smooth;
 }
+
 textarea {
   resize: none;
 }
-i {
-  color: var(--titre1-color);
-}
+
 button {
   cursor: pointer;
 }
+
 /*#region BOUTON */
 
 .btn {
@@ -44,15 +47,27 @@ button {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
+
 .btn:hover {
   transform: translateY(-3px);
-  background: var(--btn-colorFonce);
+  background: var(--titre2-color);
 }
-.btn-sub-contact {
-  margin-right: 35%;
-  padding: 1.5rem 5rem;
-  font-size: 1.6rem;
+
+.btn-contact {
+  width: 100%;
+  height: 55px;
+  background: var(--titre2-color);
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  margin-top: 25px;
+  transition: transform 0.5s ease;
 }
+
 /*#endregion BOUTON */
 
 a {
@@ -61,8 +76,10 @@ a {
   color: inherit;
   transition: color 0.3s ease;
 }
+
 a:hover {
   color: var(--btn-colorFonce);
+  
 }
 
 /*#region Navbar */
@@ -73,13 +90,14 @@ a:hover {
   object-position: center;
   display: block;
 }
+
 .header-img-container {
   width: 5rem;
   height: 5rem;
-  border-radius: 50px;
   overflow: hidden;
   margin-right: 1.5rem;
 }
+
 .header {
   z-index: 1000;
   top: 0;
@@ -87,10 +105,12 @@ a:hover {
   width: 100%;
   transition: top 0.3s;
 }
+
 .navbar-text {
   color: var(--txt-color);
   align-self: center;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -181,17 +201,20 @@ a:hover {
   margin-left: 15%;
   margin-right: 15%;
 }
+
 .main-container {
   max-width: 120rem;
   margin: auto;
   width: 90%;
 }
+
 .btn-sub-contact {
   padding: 1.5rem 5rem;
   font-size: 1.4rem;
 }
+
 .contact-form-container {
-  padding: 4rem;
+  padding: 2rem;
   text-align: right;
   width: 95%;
   border-radius: 5px;
@@ -211,9 +234,11 @@ a:hover {
   display: block;
   text-align: left;
 }
+
 .contact--form-input {
   color: #333;
   width: 100%;
+  max-height: 200px;
   border: 1px solid #ebebeb;
   font-size: 1.6rem;
   letter-spacing: 0px;
@@ -227,32 +252,31 @@ a:hover {
   font-size: 1.4rem;
   margin-right: 30%;
 }
+
 .txt-contact {
   font-size: 64px;
   font-weight: bold;
   display: flex;
   justify-content: center;
 }
+
 #contact h2 span {
   font-weight: bold;
   display: flex;
   justify-content: center;
 }
+
 /*#endregion Contact */
 
 /*#region footer */
+.copy-right{ color: white;}
 
 .main-footer {
   margin-top: 10%;
-  background: #000;
+  background: var(--titre1-color);
   color: #fff;
 }
 
-.main-footer-haut {
-  display: flex;
-  justify-content: space-between;
-  padding: 8rem 0;
-}
 .main-footer-col-1 {
   order: 2;
 }
@@ -274,9 +298,11 @@ a:hover {
   margin-bottom: 1rem;
   transition: all 0.3s ease;
 }
+
 .main-footer-icone:hover {
   transform: scale(1.2);
 }
+
 .main-footer-icone--mr-none {
   margin-right: 0;
 }
@@ -287,7 +313,8 @@ h1 {
   color: var(--titre1-color);
   font-size: 3rem;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(81, 1, 133, 0.4); /* Ombre légère pour le titre */
+  text-shadow: 2px 2px 4px rgba(81, 1, 133, 0.4);
+  /* Ombre légère pour le titre */
 }
 
 h2 {
@@ -304,7 +331,8 @@ p {
   line-height: 1.6;
   color: var(--txt-color);
   margin-bottom: 2rem;
-  letter-spacing: 0.5px; /* Espacement de lettres pour plus de lisibilité */
+  letter-spacing: 0.5px;
+  /* Espacement de lettres pour plus de lisibilité */
 }
 
 /* Mission section */
@@ -313,15 +341,7 @@ ul.list-unstyled li {
   font-size: 1.1rem;
   padding: 0.5rem 0;
   position: relative;
-  padding-left: 25px; /* Ajouter un peu d'espace avant le texte */
-}
-
-ul.list-unstyled li:before {
-  content: "⚪"; /* Ajout d'un petit symbole pour les éléments de liste */
-  position: absolute;
-  left: 0;
-  font-size: 1.2rem;
-  color: var(--btn-color); /* Couleur du point */
+  padding-left: 25px;
 }
 
 .slider {
@@ -332,13 +352,14 @@ ul.list-unstyled li:before {
 
 .slider-items {
   gap: 20px;
-  animation: scrolling 20s linear infinite;
+  animation: scrolling 15s linear infinite;
 }
 
 @keyframes scrolling {
   0% {
     transform: translateX(80%);
   }
+
   100% {
     transform: translateX(-20%);
   }
@@ -362,15 +383,18 @@ ul.list-unstyled li:before {
 }
 
 .info-box:hover {
-  transform: translateY(-5px); /* Effet de "rehaussement" au survol */
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+  transform: translateY(-5px);
+  /* Effet de "rehaussement" au survol */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  /* Ombre plus marquée au survol */
 }
 
 .info-box h2 {
   font-size: 2rem;
   color: var(--titre1-color);
   margin-bottom: 1rem;
-  text-transform: uppercase; /* Rendre les titres de section plus nets */
+  text-transform: uppercase;
+  /* Rendre les titres de section plus nets */
 }
 
 .info-box p {
@@ -380,11 +404,8 @@ ul.list-unstyled li:before {
 
 /* Banner */
 .banner {
-  background: linear-gradient(
-    45deg,
-    var(--titre2-color),
-    var(--btn-color)
-  ); /* Dégradé linéaire */
+  background: linear-gradient(45deg, var(--titre2-color), var(--btn-color));
+  /* Dégradé linéaire */
   color: white;
   padding: 2rem;
   font-size: 1.6rem;
@@ -392,7 +413,8 @@ ul.list-unstyled li:before {
   text-align: center;
   margin-top: 2rem;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Ombre pour un effet 3D */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Ombre pour un effet 3D */
 }
 
 .news-grid {
@@ -413,7 +435,8 @@ ul.list-unstyled li:before {
 }
 
 .news-grid div:hover {
-  transform: scale(1.05); /* Effet de zoom au survol */
+  transform: scale(1.05);
+  /* Effet de zoom au survol */
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
@@ -426,7 +449,8 @@ ul.list-unstyled li:before {
 }
 
 .news-grid div img:hover {
-  opacity: 0.8; /* Opacité au survol */
+  opacity: 0.8;
+  /* Opacité au survol */
 }
 
 .about-container {
@@ -444,7 +468,8 @@ ul.list-unstyled li:before {
 .image-container img {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* Optionnel : pour arrondir les bords de l'image */
+  border-radius: 8px;
+  /* Optionnel : pour arrondir les bords de l'image */
 }
 
 .text-container {
@@ -455,4 +480,26 @@ ul.list-unstyled li:before {
 .text-container p {
   font-size: 1.1em;
   line-height: 1.6;
+}
+
+.main-footer__lower {
+  padding: 4rem 0;
+  border-top: 1px solid #444;
+  font-size: 1rem;
+  text-align: left;
+  text-align: center;
+}
+
+.main-footer-col a {
+  font-size: 22px;
+}
+
+
+.image-agrandie {
+  width: 100%; 
+  transition: transform 0.3s ease; /
+}
+
+.image-agrandie.agrandie {
+  transform: scale(1.7); 
 }

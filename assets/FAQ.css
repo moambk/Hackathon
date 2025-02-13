@@ -1,0 +1,141 @@
+
+
+  :root {
+    --bg-color: #ffe6f5;
+    --txt-color: #000;
+    --titre1-color: #510185;
+    --titre2-color: #d085ff;
+    --btn-color: #510185; 
+    --btn-colorFonce: #3c0066; 
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ::selection {
+    background-color: var(--titre1-color);
+    color: var(--bg-color);
+  }
+  body {
+    font-family: "Exo 2", serif;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    transition: all 0.3s ease;
+  }
+.faq-container {
+    width: 70%;
+    margin: 20px auto;
+    font-family: "Exo 2", serif;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem; 
+  }
+
+  .faq-item {
+    margin-bottom: 12px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .faq-question {
+    width: 100%;
+    padding: 12px; 
+    font-size: 1.1em; 
+    font-weight: bold;
+    text-align: left;
+    background-color: var(--btn-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: var(--btn-colorFonce);
+  }
+  
+
+  .faq-answer {
+    padding: 12px; 
+    background-color: #ffffff;
+    color: var(--txt-color);
+    font-size: 0.95em; 
+    line-height: 1.5;
+    border-top: 2px solid var(--titre2-color);
+    border-radius: 0 0 8px 8px;
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .faq-answer.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .faq-answer.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+    display: none;
+  }
+  
+
+  .faq-container h2 {
+    text-align: center;
+    font-size: 1.7rem; 
+    color: var(--titre1-color);
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+
+/*#region footer */
+.copy-right{ color: white;}
+
+.main-footer {
+  margin-top: 10%;
+  background: var(--titre1-color);
+  color: #fff;
+}
+
+.main-footer-col-1 {
+  order: 2;
+}
+
+.main-footer-col-2 {
+  width: 40%;
+  order: 1;
+  max-width: 50rem;
+  margin: 0 0 0 5rem;
+}
+
+.main-footer-social-stock {
+  margin-top: 1rem;
+}
+
+.main-footer-icone {
+  margin-right: 1rem;
+  width: 3rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.main-footer-icone:hover {
+  transform: scale(1.2);
+}
+
+.main-footer-icone--mr-none {
+  margin-right: 0;
+}
+
+/*#endregion footer */
+
+  
