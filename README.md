@@ -3,7 +3,7 @@ Hackaton février 2025 organisé par l'IAF (Ingénieur au Féminin). Développer
 
 🏆🥇 Prix Crédit Agricole - Un immense merci pour cette reconnaissance!
 
-🥈 Deuxième prix NTN - Un immense merci pour cette récompense et cette belle opportunité !
+🏆🥇 Prix NTN - Un immense merci pour cette récompense et cette belle opportunité !
 
 ---
 
