@@ -51,6 +51,7 @@ button {
 .btn:hover {
   transform: translateY(-3px);
   background: var(--titre2-color);
+  color: rgb(255,255,255);
 }
 
 .btn-contact {
@@ -218,7 +219,7 @@ a:hover {
   width: 95%;
   border-radius: 5px;
   margin: 5rem auto 0 auto;
-  background-color: var(--titre1-color);
+  background-color: rgb(255,255,255);
 }
 
 .contact--form-field {
@@ -226,7 +227,7 @@ a:hover {
 }
 
 .contact--form-label {
-  color: #bdbdbd;
+  color: var(--titre1-color);
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -235,11 +236,11 @@ a:hover {
 }
 
 .contact--form-input {
-  color: #333;
+  color: var(--titre1-color);
   width: 100%;
   max-height: 200px;
-  border: 1px solid #ebebeb;
-  font-size: 1.6rem;
+  border: none;
+  font-size: 1rem;
   letter-spacing: 0px;
   border-radius: 5px;
   font-weight: bold;
@@ -250,6 +251,7 @@ a:hover {
   padding: 2rem 4rem;
   font-size: 1.4rem;
   margin-right: 30%;
+  color: rgb(255,255,255);
 }
 
 .txt-contact {
